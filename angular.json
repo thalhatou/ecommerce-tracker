@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-                "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -121,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "angular-mean-crud-tutorial"
+  "defaultProject": "angular-mean-crud-tutorial",
+  "cli": {
+    "analytics": "77480714-f4f6-4753-981a-3cfbad654a56"
+  }
 }
