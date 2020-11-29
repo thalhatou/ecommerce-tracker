@@ -4,16 +4,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AboutComponent } from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { HelpComponent } from './help/help.component';
-import {AppRoutingModule} from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 import { DescribeComponent } from './describe/describe.component';
-import { ReviewComponent } from './review/review.component'
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -31,26 +29,8 @@ import { ReviewComponent } from './review/review.component'
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule,
-    AngularFireStorageModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export class AppModule {}
