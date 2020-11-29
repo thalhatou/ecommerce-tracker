@@ -11,16 +11,9 @@ import { SignupComponent } from './signup/signup.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { HelpComponent } from './help/help.component';
 import {AppRoutingModule} from './app-routing.module'
-const config =  {
-    apiKey: "AIzaSyCroFlqCDzOaGVIxoJ56PyQfbzQSlORedc",
-    authDomain: "ecommerce-tracker-289ea.firebaseapp.com",
-    databaseURL: "https://ecommerce-tracker-289ea.firebaseio.com",
-    projectId: "ecommerce-tracker-289ea",
-    storageBucket: "ecommerce-tracker-289ea.appspot.com",
-    messagingSenderId: "125239719142",
-    appId: "1:125239719142:web:e0d2162338a0a0de83b727"
-  };
-
+import { environment } from '../environments/environment';
+import { DescribeComponent } from './describe/describe.component';
+import { ReviewComponent } from './review/review.component'
 
 @NgModule({
   declarations: [
@@ -30,14 +23,16 @@ const config =  {
     SignupComponent,
     ChallengesComponent,
     HelpComponent,
-    AngularFireModule.initializeApp(config),
-    AngularFirestoreModule,
-    AngularFireAuthModule,
-    AngularFireStorageModule
+    DescribeComponent,
+    ReviewComponent,
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
