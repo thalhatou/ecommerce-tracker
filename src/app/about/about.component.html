@@ -2,10 +2,10 @@
     <header class="text-gray-500 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-                <a href="#" class="mr-5 hover:text-white">Challenges</a>
-                <a href="#" class="mr-5 hover:text-white">Description </a>
-                <a href="#" class="mr-5 hover:text-white">Help</a>
-                <a href="#" class="hover:text-white">Review</a>
+                <a routerLink = '/challenge' class="mr-5 hover:text-white">Challenges</a>
+                <a routerLink = '/describe' class="mr-5 hover:text-white">Description </a>
+                <a routerLink = '/help'class="mr-5 hover:text-white">Help</a>
+                <a routerLink = '/review'class="hover:text-white">Review</a>
             </nav>
             <a href="index.html"
                 class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
@@ -27,7 +27,7 @@
     <section class="text-gray-500 bg-gray-900 body-font">
         <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
             <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
-                src="./assets/img/seven-hero.png" />
+                src="../assets/Seven-hero.png" />
             <div class="text-center lg:w-2/3 w-full">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                     Welcome to <span id="element"></span>
@@ -214,5 +214,6 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/js/custom.js"></script>
+    <!-- <script src="./assets/js/custom.js"></script> -->
 </body>
+<!-- <router-outlet></router-outlet> -->
