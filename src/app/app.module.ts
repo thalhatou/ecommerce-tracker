@@ -7,8 +7,11 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-
-
+import { AboutComponent } from './about/about.component';
+import { SignupComponent } from './signup/signup.component';
+import { ChallengesComponent } from './challenges/challenges.component';
+import { HelpComponent } from './help/help.component';
+import {AppRoutingModule} from './app-routing.module'
 const config =  {
     apiKey: "AIzaSyCroFlqCDzOaGVIxoJ56PyQfbzQSlORedc",
     authDomain: "ecommerce-tracker-289ea.firebaseapp.com",
@@ -24,12 +27,17 @@ const config =  {
   declarations: [
     AppComponent,
     HomeComponent,
+    AboutComponent,
+    SignupComponent,
+    ChallengesComponent,
+    HelpComponent,
     AngularFireModule.initializeApp(config),
-    AngularFirestoreModule, // firestore
-    AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule
   ],
   providers: [],

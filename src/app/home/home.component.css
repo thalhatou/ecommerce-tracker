@@ -1,0 +1,39 @@
+:root {
+  --primary-color: rgb(6, 156, 156);
+}
+
+/*custom scrollbar styling */
+::-webkit-scrollbar {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  background: rgb(52, 59, 59);
+}
+
+::-webkit-scrollbar-corner {
+  cursor: pointer;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(8, 216, 216, 0.404);
+}
+
+a:hover {
+  cursor: pointer;
+}
+span {
+  color: var(--primary-color);
+}
+.btn {
+  background-color: var(--primary-color);
+}
+.fas {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+h2 {
+  color: var(--primary-color);
+}
